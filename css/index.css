@@ -117,6 +117,7 @@ nav.nav-menu {
     display: inline-block;
     vertical-align: middle;
     line-height: normal;
+    margin-top: 12px; 
 }
 
 .content-img{
@@ -232,6 +233,7 @@ button {
     width: 100%;
 }
 
+/* START CSS FOR RWD PROJECT 1 */
 /* Media Queries */
 
     /* Tablet max width */
@@ -274,14 +276,13 @@ button {
             color: black;
             padding: 15px 40px;
             text-align: center;
-            text-decoration: none;
             margin-top: 2px;
-            margin-left: 6px;
             margin-bottom: 16px;
             cursor: pointer;
             border-radius: 8px;
-            position:relative;
-            left: 40%;
+            /* left: 40%; atttemting to center this button properly*/
+            margin-left: 100px;
+            margin-right: 100px; 
           }
 
         .middle-img{
@@ -298,14 +299,18 @@ button {
             width: 100%;
         }
 
-        .nav-menu {
+        .nav-menu, footer nav {
             display: flex;
             flex-direction: column;
             width: 100%;
-            }
+        }
+
+        footer nav a {
+            margin: 5px; 
+        }
         button{
-            left: 30%;
-            
+            /* left: 30%; atttemting to center this button properly*/
+            margin-left: 40px; 
         }
 
         .top-content, .bottom-content {
@@ -319,4 +324,3 @@ button {
         }
 
     }
-  
