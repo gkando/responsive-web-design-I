@@ -213,7 +213,7 @@ button {
     cursor: pointer;
     border-radius: 8px;
     position:relative;
-    left: 20%;
+    /* left: 20%; */
   }
 
 .middle-content-box h2{
@@ -238,8 +238,22 @@ button {
 
     /* Tablet max width */
     @media(max-width: 800px) {
-        .container {
+        body{
+            /* width: 95%; */
+            margin: auto 0;
+        }
+
+        footer {
             width: 100%;
+            margin: 0 auto;
+        }
+        header {
+            width: 90%;
+            margin: 0 auto;
+        }
+        
+        .container {
+            width: 90%;
             margin: 0 auto;
             /* background: yellow; */
         }
@@ -248,11 +262,12 @@ button {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            width: 100%; 
+            width: 90%;
+            margin: 0px;
         }
 
         .logo-img{
-            width: 100%; 
+            width: 90%; 
         }
     
         .container header nav a {
@@ -264,10 +279,10 @@ button {
         }
 
         .top-content-1 .text-container {
-            width: 100%;
+            width: 90%;
         }
         .top-content-1 .text-container .text {
-            width: 100%;
+            width: 90%;
         }
 
         button {
@@ -281,12 +296,12 @@ button {
             cursor: pointer;
             border-radius: 8px;
             /* left: 40%; atttemting to center this button properly*/
-            margin-left: 100px;
-            margin-right: 100px; 
+            /* margin-left: 100px; */
+            /* margin-right: 100px;  */
           }
 
         .middle-img{
-            width: 100%;
+            width: 90%;
         }
     }
     /* Phone max width */
@@ -307,10 +322,6 @@ button {
 
         footer nav a {
             margin: 5px; 
-        }
-        button{
-            /* left: 30%; atttemting to center this button properly*/
-            margin-left: 40px; 
         }
 
         .top-content, .bottom-content {
