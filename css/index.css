@@ -1,3 +1,322 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: 'Rubik', sans-serif;
+}
+
+p {
+    line-height: 1.4;
+    font-family: 'Rubik', sans-serif;
+}
+
+/*  start nav bar stuff */
+header {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.logo-img:hover img {
+    filter: invert(100%);
+}
+
+nav.nav-menu {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:white;
+  }
+  
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 2%;
+    font-size: 16px;
+  }
+  
+  .nav-menu a {
+    display: block;
+    color: black;
+    text-align: center;
+    margin: 1px;
+    padding: 10px 10px;
+    text-decoration: none;
+  }
+  
+  .nav-menu a:hover:not(.active) {
+    background-color: #111;
+    color: white;
+  }
+/*  End nav bar stuff */
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+.text-container h2{
+    font-family: bangers;
+}
+.text{
+    font-family: bangers;
+    font-size: 75px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.content-img{
+    margin-bottom: 12px;
+}
+
+.top-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.top-content .text-container {
+    width: 49%;
+    padding: 0 1%;
+    padding-bottom: 20px;
+}
+
+.middle-content section:not(.about-page) {
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.middle-content h2 {
+    padding: 0 2%;
+    margin-bottom: 0;
+}
+
+.bottom-content {
+    display: flex;
+    margin: 0 2% 20px;
+    justify-content: space-around;
+}
+
+.bottom-content .text-container {
+    padding-right: 4%;
+}
+
+.bottom-content .text-container:last-child {
+    padding-right: 0;
+}
+
+footer {
+    width: 100%;
+    background: black;
+}
+
+footer nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    font-size: 14px;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+}
 
 
+.middle-content-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly ;
+    margin-bottom: 14px;
+}
+
+.middle-content-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 50%;
+    padding: 4px;
+    margin-top: 2px;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;   
+}
+
+
+button {
+    background-color: white;
+    border: solid black 2px;
+    color: black;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 2px;
+    margin-left: 6px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    position:relative;
+    left: 20%;
+  }
+
+.middle-content-box h2{
+    margin-top: 14px;
+    margin-bottom: 14px;
+    padding: 0;
+    
+}
+
+.middle-content-box p{
+    margin-bottom: 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.about-page .top-content .text-container {
+    width: 100%;
+}
+
+/* Media Queries */
+
+    /* Tablet max width */
+    @media(max-width: 800px) {
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            /* background: yellow; */
+        }
+    
+        .nav-menu {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%; 
+        }
+
+        .logo-img{
+            width: 100%; 
+        }
+    
+        .container header nav a {
+            margin-bottom: 20px;
+        }
+
+        .text-container .content-img{
+            display: none;
+        }
+
+        .top-content-1 .text-container {
+            width: 100%;
+        }
+        .top-content-1 .text-container .text {
+            width: 100%;
+        }
+
+        button {
+            background-color: white;
+            border: solid black 2px;
+            color: black;
+            padding: 15px 40px;
+            text-align: center;
+            text-decoration: none;
+            margin-top: 2px;
+            margin-left: 6px;
+            margin-bottom: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+            position:relative;
+            left: 40%;
+          }
+
+        .middle-img{
+            width: 100%;
+        }
+    }
+    /* Phone max width */
+    @media(max-width: 500px) {
+        header {
+            width: 100%
+        }
+        .container {
+            /* background: pink; */
+            width: 100%;
+        }
+
+        .nav-menu {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            }
+        button{
+            left: 30%;
+            
+        }
+
+        .top-content, .bottom-content {
+            flex-direction: column;
+        }
+
+        .top-content .text-container, .bottom-content .text-container {
+            width: 100%;
+            margin: 2px;
+            padding: 10px;
+        }
+
+    }
+  
